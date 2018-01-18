@@ -1,0 +1,10 @@
+<h1>Directory of United States President by State and Position</h1>
+<% @names.each do |name| %>
+  <div>
+  <h2><%= name.name %></h2><br />
+  <h2><%= name.state %></h2><br />
+  <h2><%= name.position %></h2><br />
+  </div>
+
+  <hr />
+<% end %>
