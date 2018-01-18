@@ -1,8 +1,10 @@
-<h1>Enter President Details</h1>
-<%= simple_form_for @name do |name| %>
-  <%= f.input :name %>
-  <%= f.input :state %>
-  <%= f.input :position %>
-  <br />
-  <%= f.submit 'Create', class: 'btn btn-primary' %>
-<% end %>
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Presidential Information</h1>
+  <%= simple_form_for @name do |f| %>
+    <%= f.input :name %>
+    <%= f.input :state %>
+    <%= f.input :position %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
