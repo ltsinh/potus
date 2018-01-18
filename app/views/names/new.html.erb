@@ -1,0 +1,8 @@
+<h1>Enter President Details</h1>
+<%= simple_form_for @name do |name| %>
+  <%= f.input :name %>
+  <%= f.input :state %>
+  <%= f.input :position %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>

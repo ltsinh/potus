@@ -4,4 +4,8 @@ class NamesController < ApplicationController
 
   end
 
+  def new
+    @name = Name.new
+  end
+
 end
