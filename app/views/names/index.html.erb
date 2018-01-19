@@ -1,7 +1,12 @@
-<h1>Directory of United States President by State and Position</h1>
+
+<%= image_tag 'potus.jpg', class: 'img-fluid' %>
+<br />
+<br />
+<h1>US Presidents in chronological order by state</h1>
+<br />
 <% @names.each do |name| %>
   <div class="booyah-box col-10 offset-1">
-  <h2><%= link_to name.name, name_path(name) %>, <%= name.state %>, <%= name.position %></h2><br />
+  <h2><%= name.position %>. <%= name.name %>, <%= name.state %></h2><br />
   </div>
 
   <hr />
