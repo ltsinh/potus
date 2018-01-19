@@ -9,6 +9,18 @@
   </head>
 
   <body>
+
+
+    <%= link_to 'US Presidents', root_path, class: 'navbar-brand' %>
+
+<ul class="navbar-nav mr-auto mt-2 mt-md-0">
+  <li class="nav-item">
+    <%= link_to new_name_path, class: 'nav-link' do %>
+    <i class="fa fa-plus-circle"></i> US Presidents
+    <% end %>
+  </li>
+</ul>
+
     <%= yield %>
   </body>
 </html>

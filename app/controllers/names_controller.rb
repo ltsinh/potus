@@ -13,6 +13,10 @@ class NamesController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @name = Name.find(params[:id])
+  end
+
   private
 
   def name_params
